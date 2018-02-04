@@ -1,0 +1,137 @@
+Pomo 1: 8:20 --> 8:45
+Goal: Get your shit together
+
+Step 1
+ Set up workspace
+ Pull out instructions
+ Look at proposal
+
+5 pages -- conference paper
+
+40% of grade holy fuck
+
+From the project suggestion list:
+
+ Take a dataset of interest and apply classic unsupervised learning methods (PCA,LSA, MDS, hierarchical clustering) or basic Bayesian methods (mixture modeling,
+infinite mixtures, topic models, relational models). Compare and contrast structures found and generalization performance.
+
+ I can draw from the same datasets as those used in the Infinite Relational Model (http://web.mit.edu/cocosci/Papers/Kemp-etal-AAAI06.pdf) to do the comparison.
+
+Basil: good resource, but may only be around for another few hours
+
+Stay on this doc, otherwise feel scattered
+ Off of messenger
+ 
+Find on page
+
+Unsupervised learning methods
+ Found this doc
+This might work
+ Can generate the visuals from jupyter-notebook
+
+Need to get data
+
+Big Steps of project
+ Download the data
+ implement algorithms in jupyter-notebook
+  visualize them
+ Write up report
+
+At least the steps are clear 
+ Let's do this thing
+
+Pomo 2: 8:55 --> 9:20
+Goal: Get data loaded into jupyter-notebook
+
+Find source
+ Want the animal dataset in the inf rel paper
+
+Downloaded!
+ Set up the jupyter notebook
+  Start up jupyter notebook
+   Took a while, but worked
+
+Load file into matrix
+ Wrote code, maybe will work
+
+Figure out how to make format like that of 21M.387
+
+Pomo 3: 9:25 --> 9:50
+Goal: Get data loaded, and template first algo
+
+Reason does not look like 21M.387 is because it is a python file instead of ipynb
+Matrices loaded
+
+First algo: pca
+
+ Question -- do I have to implement myself, or can it w/ imlementation that are online
+
+Take a walk downstairs while understanding pca
+Get red bull -- actually coffee may last longer
+
+Pomo 4: 10:30 --> 10:55
+Goal: Get PCA working
+
+Got some understanding of PCA
+ Linear orthogonal transformation of data vectors in such a way that the 1st vector carries the most information and so on
+ Think of it like a cluster of data in an ellipse, and the eigenvectors are the principle components
+
+Look at paper to get better idea of output
+ How come Inf Rel paper clusters both features and elements
+ What I am looking at is just clustering using k-means
+ 
+What are properties of kmeans_fit
+ Want to get classifications of each point
+ Is it just the closest point?
+
+have lables with kmeans_fit.lables_
+
+Methods
+ fit, fit_predict, fit_transform, get_params, predict, score, set_params, transform
+
+In order to make the labels meaningful on the given data
+ Want labels
+ Group animals by labels
+ 
+get all indices with same values
+ How to use groupby
+ Did it
+
+But what is the purpose of PCA
+Will it improve my k-means clustering?
+
+PCA is not a clustering method. But sometimes it helps to reveal clusters
+
+What is the elbow approach
+ Used to determine optimal number of clusters for k-means
+ 
+How to get error -- got it
+
+Ended up plotting number of clusters interactively
+
+Re-read original prompt
+
+Use PCA, to find the features that are very important
+
+Now try LSA -- not LSA -- just text
+Try MDS
+ Mixture modeling
+
+Need to use the template from the NIPS
+ Really is very good
+ But having trouble getting to compile
+ Maybe because the extra file
+
+Undefined control sequence
+
+Start removing things untill works
+
+\And Doesn't work
+
+Missing files -- works now
+What to do about missing spots
+ Unsure what to do for first 
+ wrote something
+
+Wrote rest of things
+Submitted
